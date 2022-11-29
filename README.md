@@ -14,13 +14,17 @@ A benchmark of the depth sensing capabilities of the OAK-D Lite camera is also e
 
 ## Installation procedure
 
-See the `setup` folder
+See the [INSTALLATION.md](./INSTALLATION.md) file
 
 ## Examples
 
-See the `examples` folder for simple usage example of a given sensor
+See the [./examples/](./examples/) folder for simple usage example of a given sensor
 
 ## Benchmarks
 <!-- TODO -->
 WIP
+
+## Raspberry Pi 4 pinout
+
+![RPi4 pinout](./assets/R-Pi-4-GPIO-Pinout.jpg)
 
