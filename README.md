@@ -12,9 +12,9 @@ The RPLIDAR rotating LiDAR <!-- TODO: from ... --> is used to map the benchmark 
 
 A benchmark of the depth sensing capabilities of the OAK-D Lite camera is also executed
 
-## Installation procedure
+## Setup procedures
 
-See the [INSTALLATION.md](./INSTALLATION.md) file
+See the [SETUP.md](./SETUP.md) file for sensor specific procedures
 
 ## Examples
 
