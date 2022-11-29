@@ -24,7 +24,3 @@ See the [./examples/](./examples/) folder for simple usage example of a given se
 <!-- TODO -->
 WIP
 
-## Raspberry Pi 4 pinout
-
-![RPi4 pinout](./assets/R-Pi-4-GPIO-Pinout.jpg)
-
