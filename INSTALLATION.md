@@ -9,11 +9,24 @@ Following are the procedures to setup environments to use the selected sensors:
 - [RPLIDAR](#rplidar)
 - [OAK-D Lite](#oak-d-lite)
 
+## Virtual environment
+
+~~~~bash
+python3.9 -m venv venv
+pip install -U pip
+pip install wheel
+~~~~
+
 ## HC-SR05
 WIP
 
 ## DFRobot URM09
 WIP
+~~~~bash
+python3.9 -m venv venvURM09
+pip install -U pip
+pip install wheel
+~~~~
 
 ## VL53L4CX
 WIP

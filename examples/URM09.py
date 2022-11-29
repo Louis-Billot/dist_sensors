@@ -11,7 +11,7 @@
   @url https://github.com/DFRobot/DFRobot_URM09
 '''
 import time
-from lib.DFRobot_URM09 import *
+from libraries.DFRobot_URM09 import *
 
 IIC_MODE         = 0x01            # default use IIC1
 IIC_ADDRESS      = 0x11            # default iic device address
