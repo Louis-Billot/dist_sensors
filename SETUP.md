@@ -51,7 +51,20 @@ pip install serial smbus
 ~~~~
 
 ## VL53L4CX
-WIP
+This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+
+#### Pin connections:
+- Data pin -> GPIO2
+- Clock pin -> GPIO3
+- [2.8V - 5.5V] on VIN pin (for 3V3 usage bypass regulator by connecting to VDD and __LEAVE VIN DISCONNECTED__!!)
+
+#### Python virtual environment setup:
+~~~~bash
+python3.9 -m venv venvVL53L4CX
+pip install -U pip
+pip install wheel
+pip install smbus2 RPi.GPIO adafruit-circuitpython-vl53l4cd
+~~~~
 
 ## VL53L5CX
 This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
