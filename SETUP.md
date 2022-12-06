@@ -160,11 +160,11 @@ If the response is `/dev/serial0 -> ttyS0` I2C is activated else [try activating
 # Activate UART on your board
 WIP
 <!-- ## For RaspiOS
-Use the `raspi-config` command ([see this tutorial from pi3g](https://pi3g.com/2021/05/20/enabling-and-checking-i2c-on-the-raspberry-pi-using-the-command-line-for-your-own-scripts/) to set it with a single command line)
 
 ## For Ubuntu
-Make sure `dtparam=i2c_arm=on` is set in the `/boot/firmware/config.txt` file
-(Optionally also check `i2c-dev` is in the `/etc/modules` file) -->
+
+
+[see this tutorial from MakersPortal](https://makersportal.com/blog/distance-detection-with-the-tf-luna-lidar-and-raspberry-pi -->
 
 # Other Resources
 - [ThePiHut tutorial for HC-SR04 and HC-SR05](https://thepihut.com/blogs/raspberry-pi-tutorials/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi)
