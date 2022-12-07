@@ -11,6 +11,8 @@ The hardware connections and software setup are available for the following sens
 
 Methods for [checking](#check-for-i2c-on-your-board) and [activating](#activate-i2c-on-your-board) I2C on your board.
 
+Methods for [checking](#check-for-uart-on-your-board) and [activating](#activate-UART-on-your-board) UART on your board.
+
 Links to [additional resources](#other-resources) available at the bottom of this document.
 
 ## Raspberry Pi 4 pinout
@@ -86,7 +88,32 @@ pip install smbus2 VL53L5CX
 WIP
 
 ## TFLUNA
-WIP
+
+#### Pin connections:
+##### I2C:
+This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+- I2C Enable -> GROUND
+- Data pin -> GPIO2
+- Clock pin -> GPIO3
+- [3.7V - 5.2V] on VIN pin
+
+##### UART:
+This sensor uses UART, [check](#check-for-uart-on-your-board) and [activate](#activate-uart-on-your-board) it!
+- I2C Enable -> FLOATING (or 3V3)
+- RXD pin -> GPIO14
+- TXD pin -> GPIO15
+- [3.7V - 5.2V] on VIN pin
+
+![TF-LUNA sensor pinout](./assets/tfluna_pinout.jpg)
+
+#### Python virtual environment setup:
+~~~~bash
+python3.9 -m venv venvTFLUNA
+pip install -U pip
+pip install wheel
+pip install smbus2 tfli2c
+# pip install serial tfluna-driver
+~~~~
 
 ## RPLIDAR
 WIP
@@ -116,9 +143,28 @@ echo 'KERNEL=="i2c-[0-9]*", GROUP="i2c"' >> /etc/udev/rules.d/10-local_i2c_group
 > For DEBUGGING purposes ONLY: give I2C permissions to everyone (only for current boot) ``sudo chmod a+rw /dev/i2c-*``
 
 # Activate I2C on your board
+## For RaspiOS
+Use the `raspi-config` command ([see this tutorial from pi3g](https://pi3g.com/2021/05/20/enabling-and-checking-i2c-on-the-raspberry-pi-using-the-command-line-for-your-own-scripts/) to set it with a single command line)
+
 ## For Ubuntu
 Make sure `dtparam=i2c_arm=on` is set in the `/boot/firmware/config.txt` file
 (Optionally also check `i2c-dev` is in the `/etc/modules` file)
+
+# Check for UART on your board
+Check if it is already activated with:
+~~~bash
+ls -l /dev/serial*
+~~~
+If the response is `/dev/serial0 -> ttyS0` I2C is activated else [try activating it](#activate-uart-on-your-board).
+
+# Activate UART on your board
+WIP
+<!-- ## For RaspiOS
+
+## For Ubuntu
+
+
+[see this tutorial from MakersPortal](https://makersportal.com/blog/distance-detection-with-the-tf-luna-lidar-and-raspberry-pi -->
 
 # Other Resources
 - [ThePiHut tutorial for HC-SR04 and HC-SR05](https://thepihut.com/blogs/raspberry-pi-tutorials/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi)
