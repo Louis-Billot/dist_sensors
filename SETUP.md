@@ -86,6 +86,31 @@ pip install smbus2 VL53L5CX
 
 ## DFRobot SEN0413
 WIP
+#### Pin connections:
+##### I2C:
+This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+- Data pin -> GPIO2
+- Clock pin -> GPIO3
+- [4.8V - 5.2V] on VCC and Alim LED pins
+- Ground on GND and Ground LED pins
+
+##### UART:
+This sensor uses UART, [check](#check-for-uart-on-your-board) and [activate](#activate-uart-on-your-board) it!
+- RXD pin -> GPIO14
+- TXD pin -> GPIO15
+- [4.8V - 5.2V] on VCC and Alim LED pins
+- Ground on GND and Ground LED pins
+
+![SEN0413 sensor pinout](./assets/SEN0413_pinout.jpg)
+
+#### Python virtual environment setup:
+~~~~bash
+python3.9 -m venv venvSEN0413
+pip install -U pip
+pip install wheel
+pip install smbus2
+# pip install serial
+~~~~
 
 ## TFLUNA
 
