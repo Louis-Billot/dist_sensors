@@ -55,6 +55,8 @@ pip install serial smbus
 ## VL53L4CX
 This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
 
+Default address: __0x29__
+
 #### Pin connections:
 - Data pin -> GPIO2
 - Clock pin -> GPIO3
@@ -70,6 +72,8 @@ pip install smbus2 RPi.GPIO adafruit-circuitpython-vl53l4cd
 
 ## VL53L5CX
 This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+
+Default address: __0x29__
 
 #### Pin connections:
 - Data pin -> GPIO2
@@ -92,6 +96,8 @@ WIP
 #### Pin connections:
 ##### I2C:
 This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+
+Default address: __0x10__
 - I2C Enable -> GROUND
 - Data pin -> GPIO2
 - Clock pin -> GPIO3
