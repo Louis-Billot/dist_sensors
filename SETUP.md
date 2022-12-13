@@ -89,6 +89,8 @@ WIP
 #### Pin connections:
 ##### I2C:
 This sensor uses I2C, [check](#check-for-i2c-on-your-board) and [activate](#activate-i2c-on-your-board) it!
+
+Default address: __0x70__
 - Data pin -> GPIO2
 - Clock pin -> GPIO3
 - [4.8V - 5.2V] on VCC and Alim LED pins
