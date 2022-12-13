@@ -43,12 +43,16 @@ WIP
 ### DFRobot SEN0413
 WIP
 
+> This sensor is a complete module with multiple chips, it is not possible to evaluate the sensor only performances.
+
+> I2C communication protocol is available in the [sensor datasheet](https://dfimg.dfrobot.com/nobody/wiki/1840a7b7b14e02f3566e0cef5b51e9ba.pdf)
+
 ### TFLUNA
 WIP
 
 > This sensor is a complete module with multiple chips, it is not possible to evaluate the sensor only performances.
 
-> I2C register is available in the [sensosr datasheet](https://www.gotronic.fr/pj2-sj-pm-tf-luna-a03-product-manual-2195.pdf#page=28&zoom=100,53,130)
+> I2C register table is available in the [sensor datasheet](https://www.gotronic.fr/pj2-sj-pm-tf-luna-a03-product-manual-2195.pdf#page=28&zoom=100,53,130)
 
 ### RPLIDAR
 WIP
