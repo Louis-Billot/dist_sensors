@@ -54,6 +54,15 @@ WIP
 
 > I2C register table is available in the [sensor datasheet](https://www.gotronic.fr/pj2-sj-pm-tf-luna-a03-product-manual-2195.pdf#page=28&zoom=100,53,130)
 
+noir/ néons -> pas de changement 
+néons/spots -> pas de changement
+néons/lumière du jour -> perte de range notoire max 3 à 5m
+réflectivité -> pas de changement lorsque orthogonal mais perte de la mesure dès que l'angle dépasse quelques degrés (pour une feuille noire) alors qu'avec une feuille blanche, la mesure reste correcte jusqu'à 45° passé [lorsque plus de 2,5m]
+
+La cible doit occuper l'entièreté du FOV du LiDAR pour que la mesure soit valide (2° de FOV -> à 8m la cible doit faire ~28cm de diamètre)
+
+<!-- TODO: Check frequency -->
+
 ### RPLIDAR
 WIP
 
