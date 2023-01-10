@@ -37,4 +37,5 @@ while True:
     while not vl53.data_ready:
         pass
     vl53.clear_interrupt()
-    print("Distance: {} cm".format(vl53.distance))
+    print("{} cm".format(vl53.distance))
+    # print("Distance: {} cm".format(vl53.distance))

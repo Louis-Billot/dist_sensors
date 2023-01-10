@@ -60,7 +60,7 @@ Default address: __0x29__
 #### Pin connections:
 - Data pin -> GPIO2
 - Clock pin -> GPIO3
-- [2.8V - 5.5V] on VIN pin (for 3V3 usage bypass regulator by connecting to VDD and __LEAVE VIN DISCONNECTED__!!)
+- [3.3V - 5V] on VIN pin
 
 #### Python virtual environment setup:
 ~~~~bash
@@ -139,7 +139,7 @@ You can detect I2C devices connected to your board using:
 i2cdetect -y 1
 ~~~~
 If `i2cdetect` is not found, intall it with `sudo apt-get install i2c-tools`
-If you don't have enough permissions, create a i2c and add your user to it:
+If you don't have enough permissions, create a `i2c` group and add your user to it:
 ~~~~bash
 sudo groupadd --system i2c
 sudo usermod <user-name> -aG i2c
